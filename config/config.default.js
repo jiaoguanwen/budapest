@@ -29,8 +29,8 @@ exports.errorHandler = {
 }
 
 
-exports.security = {
+/* exports.security = {
     csrf: {
         enable: false,
     },
-}
+} */

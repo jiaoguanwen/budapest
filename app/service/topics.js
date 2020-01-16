@@ -3,7 +3,7 @@ const Service = require('egg').Service
 class TopicService extends Service {
     constructor(ctx) {
         super(ctx)
-        this.root = 'https://cnode.org/api/v1'
+        this.root = 'https://cnodejs.org/api/v1'
     }
 
     async create(params) {
@@ -12,7 +12,8 @@ class TopicService extends Service {
             method: 'post',
             data: params,
             dataType: 'json',
-            contentType: 'json'
+            contentType: 'json',
+            timeout: 30000
         })
         console.log('1111', result)
         this.checkSuccess(result)
