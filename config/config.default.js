@@ -14,11 +14,23 @@ exports.news = {
 }
 
 exports.middleware = [
-    'robot'
+    'robot',
+    'errorHandler'
 ]
 
 exports.robot = {
     ua: [
         /Baiduspider/i,
     ]
+}
+
+exports.errorHandler = {
+    match: '/api'
+}
+
+
+exports.security = {
+    csrf: {
+        enable: false,
+    },
 }
