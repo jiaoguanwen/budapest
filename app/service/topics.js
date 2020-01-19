@@ -3,6 +3,7 @@ const Service = require('egg').Service
 class TopicService extends Service {
     constructor(ctx) {
         super(ctx)
+        // TODO need change cnode url
         this.root = 'https://cnodejs.org/api/v1'
     }
 
